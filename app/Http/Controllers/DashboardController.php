@@ -14,8 +14,8 @@ class DashboardController extends Controller
         $locale=Session::get('locale', Config::get('app.locale'));
         App::setLocale($locale);
 
-        SEOTools::setTitle('bangjasa.com');
-        SEOTools::setDescription('advertising | technology | hylarana | bangjasa');
+        SEOTools::setTitle('Bangjasa by hylarana');
+        SEOTools::setDescription('hylarana advertising and technology');
         return view('under_development');
     }
 }

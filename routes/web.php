@@ -13,11 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $locale=Session::get('locale', Config::get('app.locale'));
-    App::setLocale($locale);
-    return view('under_development');
-});
+Route::get('/', 'DashboardController@index');
 
 Route::get('/lang/{locale}', function ($locale) {
     Session::put('locale', $locale);

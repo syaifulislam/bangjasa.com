@@ -13,6 +13,7 @@
         <link href="{{ asset('css/bulma.min.css') }}" rel="stylesheet">
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <meta name="google-site-verification" content="wVZSC2Na4zBILtMBlRK0VHlZkUSJMCA_-zZC_oxc4sA" />
     </head>
     <body>
         @include('component.header_development')

@@ -14,5 +14,14 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $locale=Session::get('locale', Config::get('app.locale'));
+    App::setLocale($locale);
+    return view('under_development');
+});
+
+Route::get('/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+    return response()->json([
+        "message" => "success"
+    ]);
 });

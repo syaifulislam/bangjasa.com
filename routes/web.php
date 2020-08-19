@@ -19,9 +19,13 @@ Route::get('/', function () {
     return view('under_development');
 });
 
-Route::get('/{locale}', function ($locale) {
+Route::get('/lang/{locale}', function ($locale) {
     Session::put('locale', $locale);
     return response()->json([
         "message" => "success"
     ]);
+});
+
+Route::get('/about', function () {
+    return view('about');
 });

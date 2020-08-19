@@ -16,5 +16,6 @@ return [
     'instagram_text' => 'Instagram',
     'whatsapp_text' => 'Whatsapp',
     'text' => 'Under Development',
+    'about' => 'About Us'
 
 ];

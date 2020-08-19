@@ -15,20 +15,21 @@
       </a>
     </div>
     <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-            <a class="navbar-item" href="https://www.instagram.com/Hylarana_booth_interior" target="_blank">{{ __('under_development.instagram_text') }}</a>
-            <a class="navbar-item" href="https://api.whatsapp.com/send?phone=6282122844424" target="_blank">{{ __('under_development.whatsapp_text') }}</a>
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="select">
-              <select id="language">
-                <option value="en" @if ($locale === 'en') selected @endif>English</option>
-                <option value="id" @if ($locale === 'id') selected @endif>Bahasa Indonesia</option>
-              </select>
-            </div>
-          </div>
+      <div class="navbar-start">
+          <a class="navbar-item" href="https://www.instagram.com/Hylarana_booth_interior" target="_blank">{{ __('under_development.instagram_text') }}</a>
+          <a class="navbar-item" href="https://api.whatsapp.com/send?phone=6282122844424" target="_blank">{{ __('under_development.whatsapp_text') }}</a>
+          <a class="navbar-item" href="{{ url('/about') }}">{{ __('under_development.about') }}</a>
       </div>
+      {{-- <div class="navbar-end">
+        <div class="navbar-item">
+          <div class="select">
+            <select id="language">
+              <option value="en" @if ($locale === 'en') selected @endif>English</option>
+              <option value="id" @if ($locale === 'id') selected @endif>Bahasa Indonesia</option>
+            </select>
+          </div>
+        </div>
+      </div> --}}
     </div>
   </nav>
   <script>
@@ -45,7 +46,7 @@
       $('#language').change(function(){
         let lang = $(this).val()
         $.ajax({
-            url: "/"+lang,
+            url: "/lang/"+lang,
             type: 'GET',
             dataType: 'json', // added data type
             success: function(res) {

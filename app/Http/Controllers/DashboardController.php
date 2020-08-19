@@ -16,6 +16,10 @@ class DashboardController extends Controller
 
         SEOTools::setTitle('Bangjasa by hylarana');
         SEOTools::setDescription('hylarana advertising and technology');
+        SEOTools::opengraph()->setUrl('https://bangjasa.com');
+        SEOTools::setCanonical('https://bangjasa.com');
+        SEOTools::opengraph()->addProperty('type', 'articles');
+        SEOTools::twitter()->setSite('@syaifulislamm');
         return view('under_development');
     }
 }

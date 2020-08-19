@@ -27,5 +27,7 @@ Route::get('/lang/{locale}', function ($locale) {
 });
 
 Route::get('/about', function () {
+    $locale=Session::get('locale', Config::get('app.locale'));
+    App::setLocale($locale);
     return view('about');
 });

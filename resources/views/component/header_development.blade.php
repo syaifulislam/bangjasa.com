@@ -5,7 +5,7 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        {{-- <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28"> --}}
+        <img src="{{ asset('logo_bangjasa.png') }}" width="112" height="28">
       </a>
   
       <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
@@ -20,7 +20,7 @@
           <a class="navbar-item" href="https://api.whatsapp.com/send?phone=6282122844424" target="_blank">{{ __('under_development.whatsapp_text') }}</a>
           <a class="navbar-item" href="{{ url('/about') }}">{{ __('under_development.about') }}</a>
       </div>
-      {{-- <div class="navbar-end">
+      <div class="navbar-end">
         <div class="navbar-item">
           <div class="select">
             <select id="language">
@@ -29,7 +29,7 @@
             </select>
           </div>
         </div>
-      </div> --}}
+      </div>
     </div>
   </nav>
   <script>

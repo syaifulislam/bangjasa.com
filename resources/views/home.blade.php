@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="background-color: #d4d4d5">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,10 +17,13 @@
     </head>
     <body>
         @include('component.header_development')
+        {{-- <div class="has-text-centered">
+            <figure class="image is-3by1 is-rounded">
+                <img src="{{ asset('header.png') }}">
+            </figure>
+        </div> --}}
         <div class="container">
-            <div class="notification has-text-centered is-size-1">
-                
-            </div>
+            
         </div>
     </body>
 </html>

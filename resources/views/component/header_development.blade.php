@@ -1,32 +1,45 @@
 <?php 
   $locale = App::getLocale();
 ?>
-
-<nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a class="navbar-item" href="/">
-        <img src="{{ asset('logo_bangjasa.png') }}" width="112" height="28">
-      </a>
-  
-      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div id="navbarBasicExample" class="navbar-menu">
-      <div class="navbar-start">
-          <a class="navbar-item" href="https://www.instagram.com/Hylarana_booth_interior" target="_blank">{{ __('under_development.instagram_text') }}</a>
-          <a class="navbar-item" href="https://api.whatsapp.com/send?phone=6282122844424" target="_blank">{{ __('under_development.whatsapp_text') }}</a>
-          <a class="navbar-item" href="{{ url('/about') }}">{{ __('under_development.about') }}</a>
+<script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: #d6ff09">
+    <div class="container">
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="{{ asset('bangjasa.png') }}">
+        </a>
+    
+        <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
       </div>
-      <div class="navbar-end">
-        <div class="navbar-item">
-          <div class="select">
-            <select id="language">
-              <option value="en" @if ($locale === 'en') selected @endif>English</option>
-              <option value="id" @if ($locale === 'id') selected @endif>Bahasa Indonesia</option>
-            </select>
+      <div id="navbarBasicExample" class="navbar-menu" style="background-color: #d6ff09">
+        <div class="navbar-start is-size-4-desktop is-size-5-mobile has-text-weight-bold">
+            <a class="navbar-item" href="{{ url('/tentang-kami') }}" style="color: #0f7bce;">Tentang Kami</a>
+            <a class="navbar-item" href="{{ url('/hubungi-kami') }}" style="color: #0f7bce;">Hubungi Kami</a>
+        </div>
+        <div class="navbar-end">
+          <div class="navbar-item">
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="bd-tw-button button" target="_blank" style="background: #f09433; 
+                background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+                background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )" href="https://www.instagram.com/{{ env('INSTAGRAM') }}">
+                  <span class="has-text-white">
+                    Instagram
+                  </span>
+                </a>
+              </p>
+              <p class="control">
+                <a class="button is-primary" href="https://api.whatsapp.com/send?phone={{ env('WHATSAPP') }}" style="background-color: #25d366">
+                  <span class="has-text-white">Whatsapp</span>
+                </a>
+              </p>
+            </div>
           </div>
         </div>
       </div>

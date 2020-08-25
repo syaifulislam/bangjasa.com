@@ -14,6 +14,7 @@
         <!-- Jquery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <meta name="google-site-verification" content="wVZSC2Na4zBILtMBlRK0VHlZkUSJMCA_-zZC_oxc4sA" />
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     </head>
     <body>
         @include('component.header_development')
@@ -25,7 +26,7 @@
         <div class="container mt-4">
             <div class="columns">
                 <div class="column">
-                    <div class="card">
+                    <div class="card w3-animate-zoom">
                         <div class="card-content">
                             <div class="media">
                               <div class="media-content has-text-centered">
@@ -41,7 +42,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
+                    <div class="card w3-animate-zoom">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content has-text-centered">
@@ -59,7 +60,7 @@
             </div>
             <div class="columns">
                 <div class="column">
-                    <div class="card">
+                    <div class="card w3-animate-zoom">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content has-text-centered">
@@ -75,7 +76,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
+                    <div class="card w3-animate-zoom">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content has-text-centered">
@@ -91,7 +92,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
+                    <div class="card w3-animate-zoom">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content has-text-centered">
@@ -107,7 +108,7 @@
                     </div>
                 </div>
                 <div class="column">
-                    <div class="card">
+                    <div class="card w3-animate-zoom">
                         <div class="card-content">
                             <div class="media">
                                 <div class="media-content has-text-centered">

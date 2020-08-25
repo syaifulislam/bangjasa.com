@@ -13,9 +13,9 @@ class DashboardController extends Controller
 {
     public function index(){
         $url_now = URL::current();
-        if ($url_now === 'https://bangjasa.com') {
-            return redirect('tentang-kami');
-        }
+        // if ($url_now === 'https://bangjasa.com' || $url_now === 'http://bangjasa.com') {
+        //     return redirect('tentang-kami');
+        // }
         $locale=Session::get('locale', Config::get('app.locale'));
         App::setLocale($locale);
 

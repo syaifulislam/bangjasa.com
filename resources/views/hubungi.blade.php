@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" style="background-color: #d4d4d5">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -18,9 +18,9 @@
     </head>
     <body>
         @include('component.header_development')
-        <section class="hero mt-6">
+        <section class="hero">
             <div class="hero-body has-text-centered has-text-weight-bold is-size-3-desktop is-size-4-mobile">
-                <span style="color: #0f7bce">Hubungi Kami</span>
+                <span>Hubungi Kami</span>
             </div>
         </section>
         <div class="container">

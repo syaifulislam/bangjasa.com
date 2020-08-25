@@ -2,12 +2,12 @@
   $locale = App::getLocale();
 ?>
 <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-<nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation" style="background-color: #d6ff09">
+<nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item" href="/">
-          <img src="{{ asset('bangjasa.png') }}">
-        </a>
+        {{-- <a class="navbar-item" href="/">
+          <img src="{{ asset('bangjasa.png') }}" alt="bangjasa.com">
+        </a> --}}
     
         <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
@@ -15,10 +15,11 @@
           <span aria-hidden="true"></span>
         </a>
       </div>
-      <div id="navbarBasicExample" class="navbar-menu" style="background-color: #d6ff09">
-        <div class="navbar-start is-size-4-desktop is-size-5-mobile has-text-weight-bold">
-            <a class="navbar-item" href="{{ url('/tentang-kami') }}" style="color: #0f7bce;">Tentang Kami</a>
-            <a class="navbar-item" href="{{ url('/hubungi-kami') }}" style="color: #0f7bce;">Hubungi Kami</a>
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start is-size-4-desktop is-size-5-mobile">
+            <a class="navbar-item" href="{{ url('/') }}" style="color: #199043;">Beranda</a>
+            <a class="navbar-item" href="{{ url('/tentang-kami') }}" style="color: #199043;">Tentang Kami</a>
+            <a class="navbar-item" href="{{ url('/hubungi-kami') }}" style="color: #199043;">Hubungi Kami</a>
         </div>
         <div class="navbar-end">
           <div class="navbar-item">

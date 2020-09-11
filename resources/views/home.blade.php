@@ -18,9 +18,9 @@
     </head>
     <body>
         @include('component.header_development')
-        <div class="has-text-centered mt-2">
-            <figure class="image is-3by1">
-                <img src="{{ asset('logo_bangjasa.png') }}">
+        <div class="has-text-centered mt-2 px-6">
+            <figure class="is-square">
+                <img src="{{ asset('logo_bangjasa.png') }}" height="100">
             </figure>
         </div>
         <div class="container mt-4">
